@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель - Конференции.РФ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Конференции.РФ</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#" id="logoutBtn">Выйти</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="admin-section">
+        <div class="container">
+            <h2>Панель управления</h2>
+
+            <div class="admin-filters">
+                <label for="statusFilter">Фильтр по статусу:</label>
+                <select id="statusFilter">
+                    <option value="all">Все заявки</option>
+                    <option value="Новая">Новые</option>
+                    <option value="Мероприятие назначено">Назначенные</option>
+                    <option value="Мероприятие завершено">Завершенные</option>
+                </select>
+                <button id="applyFilter" class="btn">Применить</button>
+            </div>
+
+            <div class="admin-table-wrapper">
+                <table class="admin-table" id="adminTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Пользователь</th>
+                            <th>Помещение</th>
+                            <th>Дата</th>
+                            <th>Время</th>
+                            <th>Оплата</th>
+                            <th>Статус</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminTableBody">
+                        <tr><td colspan="8">Загрузка...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination" id="pagination"></div>
+
+            <div class="admin-section" style="margin-top:40px;">
+                <h3>Управление отзывами</h3>
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="reviewsTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Пользователь</th>
+                                <th>Рейтинг</th>
+                                <th>Отзыв</th>
+                                <th>Дата</th>
+                                <th>Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reviewsTableBody">
+                            <tr><td colspan="6">Загрузка...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="notifModal">
+        <div class="modal-content">
+            <h3>Уведомление</h3>
+            <p id="notifText"></p>
+            <button class="btn" id="notifClose">OK</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Конференции.РФ</h3>
+                    <p>Панель администратора</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Конференции.РФ. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

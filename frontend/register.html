@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Конференции.РФ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Конференции.РФ</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-form">
+                <h2>Регистрация</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="login">Логин</label>
+                        <input type="text" id="login" name="login" placeholder="Придумайте логин (мин. 6 символов)" required>
+                        <span class="error-message" id="loginError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" placeholder="Придумайте пароль (мин. 8 символов)" required>
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="full_name">ФИО</label>
+                        <input type="text" id="full_name" name="full_name" placeholder="Иванов Иван Иванович" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-full">Зарегистрироваться</button>
+                </form>
+                <p class="auth-link">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Конференции.РФ</h3>
+                    <p>Бронирование помещений: аудитории, коворкинги, кинозалы</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Конференции.РФ. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/register.js"></script>
+</body>
+</html>

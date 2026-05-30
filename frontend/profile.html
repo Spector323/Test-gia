@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Конференции.РФ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Конференции.РФ</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="booking.html">Новая заявка</a></li>
+                    <li><a href="#" id="logoutBtn">Выйти</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="container">
+            <h2>Личный кабинет</h2>
+            <div class="profile-info" id="profileInfo">
+                <p>Загрузка...</p>
+            </div>
+
+            <div class="slider-section">
+                <h3>Фотогалерея</h3>
+                <div class="slider">
+                    <div class="slider-wrapper" id="sliderWrapper">
+                        <img src="assets/864c66af3dc2cc0eb8166ba359500f25.jpg" alt="Фото 2" class="slider-img">
+                        <img src="assets/5622ba05cc6857865cfa.jpg" alt="Фото 3" class="slider-img">
+                        <img src="assets/ad4b1ceed37823f2225c0e7a.jpg" alt="Фото 4" class="slider-img">
+                    </div>
+                    <button class="slider-btn slider-prev" id="sliderPrev">&#10094;</button>
+                    <button class="slider-btn slider-next" id="sliderNext">&#10095;</button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                </div>
+            </div>
+
+            <div class="bookings-section">
+                <h3>Мои заявки</h3>
+                <div id="bookingsList">
+                    <p>Загрузка заявок...</p>
+                </div>
+            </div>
+
+            <div class="bookings-section">
+                <h3>Мои отзывы</h3>
+                <div id="myReviews">
+                    <p>Загрузка...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Конференции.РФ</h3>
+                    <p>Бронирование помещений: аудитории, коворкинги, кинозалы</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Конференции.РФ. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

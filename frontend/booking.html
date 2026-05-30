@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка - Конференции.РФ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Конференции.РФ</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                    <li><a href="#" id="logoutBtn">Выйти</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-form">
+                <h2>Оформление заявки</h2>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="roomSelect">Выберите помещение</label>
+                        <select id="roomSelect" name="room_id" required>
+                            <option value="">-- Выберите помещение --</option>
+                        </select>
+                        <span class="error-message" id="roomError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingDate">Дата проведения</label>
+                        <input type="text" id="bookingDate" name="date" placeholder="ДД.ММ.ГГГГ" required>
+                        <span class="error-message" id="dateError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingTime">Время начала</label>
+                        <input type="time" id="bookingTime" name="time" required>
+                        <span class="error-message" id="timeError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentSelect">Способ оплаты</label>
+                        <select id="paymentSelect" name="payment_method">
+                            <option value="card">Банковская карта</option>
+                            <option value="cash">Наличные</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-full">Отправить заявку</button>
+                </form>
+                <p class="auth-link"><a href="profile.html">Вернуться в личный кабинет</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Конференции.РФ</h3>
+                    <p>Бронирование помещений: аудитории, коворкинги, кинозалы</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Конференции.РФ. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/booking.js"></script>
+</body>
+</html>
